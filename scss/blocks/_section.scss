@@ -43,6 +43,7 @@
 .foto{
     width: 48%;
     position: relative;
+    overflow: hidden;
     & img{
         display: block;
             width: 100%;
@@ -56,7 +57,7 @@
     width: 100%;
     height: 100%;
     padding: 16px 16px 20px 16px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
@@ -90,6 +91,12 @@
 
 .foto:hover > .hoverEl{
     display: flex;
+}
+.foto img{
+    transition: all 0.3s;
+}
+.foto:hover > img{
+    transform: scale(1.2);
 }
 
 @media (max-width: 1447px) {
